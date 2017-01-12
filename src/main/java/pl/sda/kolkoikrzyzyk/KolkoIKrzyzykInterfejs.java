@@ -1,5 +1,6 @@
 package pl.sda.kolkoikrzyzyk;
 
+import java.rmi.server.SocketSecurityException;
 import java.util.Scanner;
 
 public class KolkoIKrzyzykInterfejs {
@@ -26,6 +27,21 @@ public class KolkoIKrzyzykInterfejs {
 		return pozycja;
 	}
 	
+	public void pokazPlansze(Plansza plansza){
+		System.out.println(plansza.toString());
+		System.out.println();
+	}
 	
+	public void podanoNiepoprawnePole (){
+		System.out.println("Podano niepoprawne pole. Spróbuj jeszcze raz");
+		Scanner scanner = new Scanner (System.in);
+		scanner.nextLine();
+	}
+	
+	public void wygranoGre (String imie){
+		System.out.println("Brawo " + imie + " - wygrales gre");
+		Scanner scanner = new Scanner(System.in);
+		scanner.nextLine();
+	}
 	
 }
