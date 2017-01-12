@@ -35,7 +35,13 @@ public class KolkiIKrzyzyk {
 					kolkoIKrzyzykInterfejs.podanoNiepoprawnePole();
 				}
 			} while (!czyWstawiono);
-			kolkoIKrzyzykInterfejs.pokazPlansze(plansza);
+			
+			if (KolkoIKrzyzykUtil.czyZakoczonoGre(plansza)){
+				kolkoIKrzyzykInterfejs.pokazPlansze(plansza);
+				kolkoIKrzyzykInterfejs.wygranoGre(aktualnyGracz);
+				break;
+			}
+						
 		}
 		
 				

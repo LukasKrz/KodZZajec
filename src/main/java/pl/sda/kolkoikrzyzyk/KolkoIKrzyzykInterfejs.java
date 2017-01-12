@@ -38,4 +38,10 @@ public class KolkoIKrzyzykInterfejs {
 		scanner.nextLine();
 	}
 	
+	public void wygranoGre (String imie){
+		System.out.println("Brawo " + imie + " - wygrales gre");
+		Scanner scanner = new Scanner(System.in);
+		scanner.nextLine();
+	}
+	
 }

@@ -10,6 +10,10 @@ public class Plansza {
 		}
 	}
 	
+	public  String[] getPola(){
+		return pola;
+	}
+	
 	public boolean wstawZnak (String znak, int pozycja){
 		if (!KolkoIKrzyzykUtil.isDigit(pola[pozycja -1])){
 			return false;
