@@ -29,6 +29,7 @@ public class KolkoIKrzyzykInterfejs {
 	
 	public void pokazPlansze(Plansza plansza){
 		System.out.println(plansza.toString());
+		System.out.println();
 	}
 	
 	public void podanoNiepoprawnePole (){

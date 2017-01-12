@@ -14,7 +14,7 @@ public class KolkiIKrzyzyk {
 		String gracz1 = kolkoIKrzyzykInterfejs.podajImie();
 		String gracz2 = kolkoIKrzyzykInterfejs.podajImie();
 		mapaGraczy.put(gracz1, "X");
-		mapaGraczy.put(gracz2, "0");
+		mapaGraczy.put(gracz2, "O");
 		
 		for (int i = 0; i < 9; i++) {
 			kolkoIKrzyzykInterfejs.pokazPlansze(plansza);
